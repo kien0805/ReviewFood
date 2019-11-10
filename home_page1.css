@@ -103,3 +103,109 @@
       border: 1px solid #ccc;
     }
   }
+
+
+ .darkblue{
+     display: flex;
+     justify-content: center;
+ }
+
+
+
+ * {box-sizing: border-box}
+
+  /* Container needed to position the overlay. Adjust the width as needed */
+  .container {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    
+  }
+  
+  /* Make the image to responsive */
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* The overlay effect - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* When you mouse over the container, fade in the overlay title */
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+
+  .line {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+
+  .bottommenu{
+    position: relative;
+    background-color: rgba(29, 194, 216, 0.678);
+    z-index: 0;
+    width: 100%;
+    overflow: auto;
+    background:rgb(26, 38, 44);
+    color: #8ba0df;
+    text-transform: uppercase;
+  }
+  .bm{
+    overflow: auto;
+    padding: 15px 0 15px;
+    border-top: 1px solid #313131;
+    border: 0;
+    outline: none
+  }
+  .bmenu{
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
