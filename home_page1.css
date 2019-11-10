@@ -2,13 +2,24 @@
     height: 600px;
     width: 100%;
     
-    background-color: whitesmoke;
+    background-color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px; 
+    color: orange;
+    text-align: center;
+
+}
+
+.vna {
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 20px; 
 }
 
 #background {
     height: 300px;
     width: 100%;
-    background-image: url(pho-ha-noi.jpg);
+    background-image: url(https://traungonquan.vn/wp-content/uploads/2018/07/ab.jpg);
     
     background-size: cover;
     background-attachment: fixed;
@@ -31,6 +42,7 @@
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
+    font-size: 15px
   }
   
   /* Change background color of buttons on hover */
