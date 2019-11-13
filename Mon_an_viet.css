@@ -1,30 +1,17 @@
-.Lightblue {
+/* .Lightblue {
     height: 600px;
     width: 100%;
     
-    background-color: white;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 20px; 
-    color: orange;
-    text-align: center;
-
+    background-color: whitesmoke;
 }
-
-.vna {
-  text-align: center;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 20px; 
-}
-
 #background {
     height: 300px;
     width: 100%;
-    background-image: url(https://traungonquan.vn/wp-content/uploads/2018/07/ab.jpg);
+    background-image: url(pho-ha-noi.jpg);
     
     background-size: cover;
     background-attachment: fixed;
-
-}
+} */
 
 /* Style the tab */
 .tab {
@@ -42,7 +29,6 @@
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 15px
   }
   
   /* Change background color of buttons on hover */
@@ -63,13 +49,13 @@
     border-top: none;
   }
 
-  .Lightblue {
+  .searchbar {
     overflow: hidden;
     background-color: #e9e9e9;
   }
   
   /* Style the links inside the navigation bar */
-  .Lightblue a {
+  .searchbar a {
     float: left;
     display: block;
     color: black;
@@ -80,19 +66,19 @@
   }
   
   /* Change the color of links on hover */
-  .Lightblue a:hover {
+  .searchbar a:hover {
     background-color: #ddd;
     color: black;
   }
   
   /* Style the "active" element to highlight the current page */
-  .Lightblue a.active {
+  .searchbar a.active {
     background-color: #2196F3;
     color: white;
   }
   
   /* Style the search box inside the navigation bar */
-  .Lightblue input[type=text] {
+  .searchbar input[type=text] {
     float: right;
     padding: 6px;
     border: none;
@@ -111,7 +97,7 @@
       margin: 0;
       padding: 14px;
     }
-    .Lightblue input[type=text] {
+    .searchbar input[type=text] {
       border: 1px solid #ccc;
     }
   }
@@ -163,7 +149,15 @@
   }
   
 
-  .line {
+  .line1 {
+    display: flex;
+    justify-content: space-around;
+  }
+  .line2 {
+    display: flex;
+    justify-content: space-around;
+  }
+  .line3 {
     display: flex;
     justify-content: space-around;
   }
@@ -178,7 +172,7 @@
     overflow: auto;
     background:rgb(26, 38, 44);
     color: #8ba0df;
-
+    
   }
   .bm{
     overflow: auto;
@@ -188,11 +182,6 @@
     outline: none
   }
   .bmenu{
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-  
     display: flex;
     justify-content: space-around;
   }
