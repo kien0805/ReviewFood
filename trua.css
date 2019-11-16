@@ -1,0 +1,186 @@
+* {box-sizing: border-box}
+
+  /* Container needed to position the overlay. Adjust the width as needed */
+  .container {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    
+  }
+  
+  /* Make the image to responsive */
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* The overlay effect - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* When you mouse over the container, fade in the overlay title */
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+
+  .line {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+
+  .bottommenu{
+    position: relative;
+    background-color: rgba(29, 194, 216, 0.678);
+    z-index: 0;
+    width: 100%;
+    overflow: auto;
+    background:rgb(26, 38, 44);
+    color: #8ba0df;
+
+  }
+  .bm{
+    overflow: auto;
+    padding: 15px 0 15px;
+    border-top: 1px solid #313131;
+    border: 0;
+    outline: none
+  }
+  .bmenu{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  
+  body, html {
+    height: 100%;
+}
+  .hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("backgroundi.jpg");
+  
+    /* Set a specific height */
+    height: 40%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+  }
+
+  .hero-text input[type=text] {
+    float: none;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 24px;
+    shape-rendering: geometricPrecision;
+  }
+
+  .menu {
+    margin-inline-start: 20px;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  font-size: 80px;
+}
+
+
+
+  /* Container needed to position the overlay. Adjust the width as needed */
+  .container2 {
+    position: relative;
+    width: 8%;
+    max-width: 300px;
+    
+  }
+.container2:hover .overlay2 {
+  opacity: 1;
+}
+
+.overlay2 {
+  position: bottom;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 19px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+
+body {
+  margin-left: 20px;
+  /* max-width: 800px; */
+  padding: 20px;
+}
