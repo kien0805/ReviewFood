@@ -150,10 +150,11 @@
   }
 
   .menu {
+    margin-inline-start: 20px;
   display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  font-size: 2cm;
+  font-size: 80px;
 }
 
 
@@ -180,8 +181,15 @@
   opacity:0;
   color: white;
   font-size: 19px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
 
+
+
+body {
+  margin-left: 20px;
+  /* max-width: 800px; */
+  padding: 20px;
+}
