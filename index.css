@@ -3,47 +3,47 @@
  .darkblue{
      display: flex;
      justify-content: center;
+     font-family: 'Courier New', Courier, monospace;
  }
-
 
 
  * {box-sizing: border-box}
 
-  /* Container needed to position the overlay. Adjust the width as needed */
-  .container {
-    position: relative;
-    width: 50%;
-    max-width: 300px;
-    
-  }
-  
-  /* Make the image to responsive */
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  /* The overlay effect - lays on top of the container and over the image */
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1;
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* When you mouse over the container, fade in the overlay title */
-  .container:hover .overlay {
-    opacity: 1;
-  }
+ /* Container needed to position the overlay. Adjust the width as needed */
+ .container {
+   position: relative;
+   width: 50%;
+   max-width: 300px;
+ }
+ 
+ /* Make the image to responsive */
+ .image {
+   display: block;
+   width: 100%;
+   height: auto;
+ }
+ 
+ /* The overlay effect - lays on top of the container and over the image */
+ .overlay {
+   position: bottom;
+   bottom: 0;
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.5); /* Black see-through */
+   color: #f1f1f1;
+   width: 100%;
+   transition: .5s ease;
+   opacity:0;
+   color: white;
+   font-size: 20px;
+   padding: 10px;
+   text-align: center;
+ }
+ 
+ /* When you mouse over the container, fade in the overlay title */
+ .container:hover .overlay {
+   opacity: 1;
+ }
+ 
   
 
   .line {
@@ -80,6 +80,10 @@
     justify-content: space-around;
   }
 
+  .media{
+    display: flex;
+    justify-content: space-around;
+  }
 
 
   .fa {
@@ -108,6 +112,15 @@
     background: #55ACEE;
     color: white;
   }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #f005bd;
+    color: white;
+  }
   
   
   body, html {
@@ -118,7 +131,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("backgroundi.jpg");
   
     /* Set a specific height */
-    height: 40%;
+    height: 50%;
   
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -179,7 +192,7 @@
   width: 100%;
   transition: .5s ease;
   opacity:0;
-  color: white;
+  color:rgb(250, 250, 250);
   font-size: 19px;
   padding: 10px;
   text-align: center;
@@ -190,6 +203,5 @@
 
 body {
   margin-left: 20px;
-  /* max-width: 800px; */
   padding: 20px;
 }
