@@ -26,24 +26,23 @@
         <div class="hero-text">
             <h1>Every day is a dish</h1>
             <input type="text" placeholder="Search..">
-            <button onclick="showData()">Data</button>
         </div>
     </div>
 
     <ul class="menu">
         <div class="container2">
             <a href="https://shopee.vn/"><i class="fas fa-bread-slice"></i></a>
-            <div class="overlay2">Breakfast</div>
+            <div id="bua_sang" class="overlay2" onclick="showData(this.id)">Breakfast</div>
         </div>
 
         <div class="container2">
             <a href="https://shopee.vn/"><i class="fas fa-hamburger"></i></a>
-            <div class="overlay2">Lunch</div>
+            <div id="bua_trua" class="overlay2" onclick="showData(this.id)">Lunch</div>
         </div>
 
         <div class="container2">
             <a href="https://shopee.vn/"><i class="fas fa-utensils"></i></a>
-            <div class="overlay2">Dinner</div>
+            <div id="bua_toi" class="overlay2" onclick="showData(this.id)">Dinner</div>
         </div>
 
     </ul>
@@ -59,7 +58,7 @@
             <a href="https://shopee.vn/"><i class="fas fa-leaf"></i></a>
             <div class="overlay2">Vegan</div>
         </div>
-        <div class="container2" id="bua_toi" onclick="showData(this.id)">
+        <div class="container2" id="bua_toi">
             <a href=""><i class="fas fa-cookie-bite"></i></a>
             <div class="overlay2">Snack</div>
         </div>
@@ -144,9 +143,8 @@
 
     </div>
 
-    <div id="food">
-
-    </div>
+    <div id="food"></div>
+    <div id="line"></div>
 
 
     <div class="bottommenu">
