@@ -25,6 +25,7 @@
 /* The overlay effect - lays on top of the container and over the image */
 .overlay {
     position: bottom;
+    cursor: pointer;
     bottom: 0;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
@@ -43,9 +44,17 @@
     opacity: 1;
 }
 
-.line {
+#line {
     display: flex;
     justify-content: space-around;
+}
+
+#line > h1 {
+    text-align: center;
+}
+
+#line > p {
+    margin-bottom: 0;
 }
 
 .bottommenu {
@@ -79,12 +88,13 @@
     justify-content: space-around;
 }
 
-.fa {
+.fab {
     padding: 20px;
     font-size: 30px;
-    width: 50px;
     text-align: center;
     text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 #food {
@@ -172,6 +182,7 @@ html {
     position: relative;
     width: 8%;
     max-width: 300px;
+    cursor: pointer;
 }
 .container2:hover .overlay2 {
     opacity: 1;

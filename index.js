@@ -25,7 +25,10 @@ function showData(id) {
     `
             food.insertAdjacentHTML("beforeend", html)
             food.style.display = "block"
+            document.getElementById("line").style.display = "none"
 
+        } else {
+            window.location.reload()
         }
     })
 }
