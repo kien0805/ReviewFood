@@ -13,12 +13,10 @@ function showData(id) {
     data.map(item => {
         if (id === item.type) {
             const html = `
-    <h1><b class="darkblue">${item.type}</b></h1>
-
+    
     <div id="${item.name}" onclick="showDetailFood(this.id)" class="line" >
         <div class="container">
-            <img src="https://media.cooky.vn/recipe/g6/50772/s800x500/cooky-recipe-637093679153815286.JPG"
-                alt="Thịt bò xào dưa cải chua" class="image">
+            <div class="green"><img src=${item.thumbnail} /></div>
             <div class="overlay" >${item.name}</div>
         </div>
     </div>
@@ -27,9 +25,7 @@ function showData(id) {
             food.style.display = "block"
             document.getElementById("line").style.display = "none"
 
-        } else {
-            window.location.reload()
-        }
+        } 
     })
 }
 
@@ -42,12 +38,21 @@ function showDetailFood(id) {
         const steps = item.steps
         if (item.name === id) {
             const html = `
-                <h1>${id}</h1>
+                <h1 >${id}</h1>
+                <div class ="green">
                 <img src=${item.thumbnail} />
-                <p>Nguyên Liệu:</p>
+                </div>
+                <h1 class="darkblue">Nguyên Liệu</h1>
+                
+                <ul class ="green1">
                 ${ingrediente.map((value, index) => { return `<p>${index} ${value} </p>` })}
-                <p>Các bước thực hiện: </p>
+                </ul>
+                
+                <h1 class="darkblue">Các bước thực hiện </h1>
+                <ul class ="green1">
                 ${steps.map((value, index) => { return `<p>${index}  ${value}  </p>` })}
+                </ul>
+                
             `
             idElement.insertAdjacentHTML("beforeend", html)
             idElement.style.display = "block"
@@ -56,3 +61,7 @@ function showDetailFood(id) {
 
 
 }
+
+
+
+

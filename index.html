@@ -25,14 +25,18 @@
     <div class="hero-image">
         <div class="hero-text">
             <h1>Every day is a dish</h1>
-            <input type="text" placeholder="Search..">
+            <input type="text" placeholder="Search.." id="searchbar">
+            
+              
+            <button onclick="showData()" ><i class="fas fa-search"></i></button>
         </div>
     </div>
+    <br>
 
     <ul class="menu">
         <div class="container2">
             <a href="#"><i class="fas fa-bread-slice"></i></a>
-            <div id="bua_sang" class="overlay2" onclick="showData(this.id)">Breakfast</div>
+            <div id="bua_sang" class="overlay2" onclick="showData(this.id)">bua_sang</div>
         </div>
 
         <div class="container2">
@@ -42,7 +46,7 @@
 
         <div class="container2">
             <a href="#"><i class="fas fa-utensils"></i></a>
-            <div id="bua_toi" class="overlay2" onclick="showData(this.id)">Dinner</div>
+            <div id="bua_toi" class="overlay2" onclick="showData(this.id)">tối</div>
         </div>
 
     </ul>
@@ -51,24 +55,24 @@
     <ul class="menu">
         <div class="container2">
             <a href="#"><i class="fas fa-ice-cream"></i></a>
-            <div class="overlay2">Dessert</div>
+            <div id="bua_toi" class="overlay2" onclick="showData(this.id)">Dessert</div>
         </div>
         </a>
         <div class="container2">
             <a href="#"><i class="fas fa-leaf"></i></a>
-            <div class="overlay2">Vegan</div>
+            <div id="bua_toi" class="overlay2" onclick="showData(this.id)">Vegan</div>
         </div>
         <div class="container2" id="bua_toi">
             <a href=""><i class="fas fa-cookie-bite"></i></a>
-            <div class="overlay2">Snack</div>
+            <div id="bua_toi" class="overlay2" onclick="showData(this.id)">Snack</div>
         </div>
     </ul>
 
     <!-- Here is pick food -->
     <div id="food_pick">
-        <h1><b class="darkblue">Recommended</b></h1>
-        <!-- Carousel is here -->
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <!-- <h1><b class="darkblue">Recommended</b></h1>
+  
+         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./assets/backgroundi.jpg" class="d-block w-100" alt="...">
@@ -88,44 +92,44 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
+        </div>  -->
 
         <h1><b class="darkblue">Top picks</b></h1>
 
         <div class="line">
             <div class="container">
-                <img src="./assets/dau-hu-sot-nam.jpg" alt="Avatar" class="image">
-                <div class="overlay">My Name is John</div>
+                <div class="lỉnel" ><img src="https://media.cooky.vn/recipe/g6/50235/s800x500/cooky-recipe-cover-r50235.jpg" alt="Avatar" class="image"></div>
+                <div class="overlay" onclick="showDetailFood1(this.id)">Ức gà sốt cam cay nướng phô mai</div>
 
 
             </div>
             <br>
             <div class="container">
-                <img src="./assets/dau-hu-sot-nam.jpg" alt="Avatar" class="image">
-                <div class="overlay">My Name is John</div>
+                <div class="lỉnel"><img src="https://media.cooky.vn/recipe/g1/3290/s320x320/recipe3290-prepare-step9-636016828760860508.jpg" alt="Avatar" class="image"></div>
+                <div class="overlay" onclick="showDetailFood1(this.id)">Bánh mì nướng muối ớt</div>
 
 
             </div>
             <br>
             <div class="container">
-                <img src="./assets/dau-hu-sot-nam.jpg" alt="Avatar" class="image">
-                <div class="overlay">My Name is John</div>
+                <div class="lỉnel"><img src="https://media.cooky.vn/recipe/g4/34474/s480x480/recipe34474-cook-step4-636995881710655946.jpg" alt="Avatar" class="image"></div>
+                <div class="overlay" onclick="showDetailFood(this.id)">Mì xào thịt xông khói</div>
             </div>
         </div>
         <div class="line">
             <div class="container">
-                <img src="./assets/dau-hu-sot-nam.jpg" alt="Avatar" class="image">
-                <div class="overlay">My Name is John</div>
+                <div class="lỉnel"><img src="https://media.cooky.vn/recipe/g3/20731/s800x500/recipe20731-636371266638707262.jpg?fbclid=IwAR2-GMctAEI7V4K1G7XfM8DnVAjEDdaF0kLO6tho3hCxcwSieYcEJV0goVc" alt="Avatar" class="image"></div>
+                <div class="overlay" onclick="showDetailFood(this.id)">Cơm rang dưa bò</div>
             </div>
             <br>
             <div class="container">
-                <img src="./assets/dau-hu-sot-nam.jpg" alt="Avatar" class="image">
-                <div class="overlay">My Name is John</div>
+                <div class="lỉnel"><img src="https://media.cooky.vn/recipe/g3/23725/s800x500/recipe-cover-r23725.jpg?fbclid=IwAR2DTNAlLv2Im6tI2NIzRmDY2CuCEr162TU7zTlVnWFc8PrRUwLf6UH1Nsk" alt="Avatar" class="image"></div>
+                <div class="overlay" onclick="showDetailFood(this.id)">Cơm cháy chả cá</div>
             </div>
             <br>
             <div class="container">
-                <img src="./assets/dau-hu-sot-nam.jpg" alt="Avatar" class="image">
-                <div class="overlay">My Name is John</div>
+                <div class="lỉnel"><img src="https://media.cooky.vn/recipe/g2/19315/s800x500/recipe19315-636258850663703502.jpg?fbclid=IwAR1R-tWIC9KwMfh8zaFcyGajXyA-BrLt_XnbjCqOi8jwJGU08eRAFy3x_Io" alt="Avatar" class="image"></div>
+                <div class="overlay" onclick="showDetailFood(this.id)">Mì Ý sốt bò bằm - Pasta Bolognese</div>
             </div>
         </div>
         <br>
@@ -146,9 +150,7 @@
 
                 <div>
                     <h2>FOLLOW US ON SOCIAL MEDIA</h2>
-                    <!-- Add icon library -->
-
-                    <!-- Add font awesome icons -->
+                    
                     <div class="media">
                         <i class="fab fa-facebook"></i>
                         <i class="fab fa-instagram"></i>
@@ -162,7 +164,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./index.js"></script>
     <script>
-
     </script>
 </body>
 
